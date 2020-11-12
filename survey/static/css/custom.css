@@ -1,0 +1,412 @@
+#container-main {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+#container-main form {
+	margin: auto;
+	max-width: 90vw;
+	width: 640px;
+}
+
+p { }
+
+html, body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+#wrapbackgroundimg {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+	background-image: url(/media/img/dining-retouched-small.jpg);
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 60px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+	  margin-left: -20px;
+	  margin-right: -20px;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+}
+
+#wrapper-narrow {
+	width: 700px;
+}
+
+.button-spacer {
+	padding-top: 30px;
+}
+
+.footer {
+	padding: 30px;
+	background-color: #f5f5f5;
+}
+
+.hero-unit h1 {
+	padding-bottom: 40px;
+}
+
+.hero-unit {
+}
+
+.hero-unit p {
+}
+
+.license {
+}
+
+.btn-xlarge {
+}
+
+.hero-engage {
+}
+
+.hero-engage > .btn-xlarge {
+}
+
+.box-link {
+}
+
+.footer {
+}
+
+textarea {
+	width: 100%;
+}
+
+.helptext {
+}
+
+.navbar {
+}
+
+p.notice {
+	color: grey;
+	font-style: italic;
+}
+
+.res-detail {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.res-modify-btn {
+	width: 400px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.res-status-btn {
+	cursor: default;
+}
+
+.timeline-tags {
+	font-style: italic;
+	font-size: 120%;
+}
+
+.new-reservation {
+	padding-top: 30px;
+}
+
+.btn-inline {
+	display: inline;
+}
+
+div.ui-datepicker{
+ font-size:10px;
+}
+
+.btn-red {
+	color: red;
+	border: 1px;
+}
+
+.btn-red:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.form-help-text {
+	font-style: italic;
+	font-size: 90%;
+}
+
+.field-wrapper {
+	width: 475px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+/* textarea {
+	width: 475px;
+	height: 120px;
+} */
+
+.float-right {
+	float:right;
+}
+
+img.profile-page-img {
+	width: 300px;
+	height: 200px;
+}
+
+.user-links {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.user-link {
+	padding-right: 20px;
+}
+
+.icon-spacer {
+	padding-right: 10px;
+}
+
+/*ul.error-list ~ .form-field-body {
+	background-color: red;
+}
+*/
+.survey-description {
+	padding-bottom: 40px;
+	padding-top: 20px;
+
+}
+
+.question-required {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+h3.collapsible:hover {
+	cursor: hand;
+	cursor: pointer; ;
+}
+
+.collapse-open span {
+    display:block;
+    float:left;
+    padding:20px;
+}
+
+.accordion-open span, .collapse-open span {
+    background:url(/media/img/collapse.png) center center no-repeat; }
+
+.accordion-close span, .collapse-close span {
+    display:block;
+    float:left;
+    background:url(/media/img/expand.png) center center no-repeat;
+    padding:20px;
+}
+
+.submit-button {
+	padding: 40px;
+	text-align: center;
+}
+
+.submit-button > input {
+	font-size: 130%;
+	padding: 10px;
+}
+
+.asterix {
+	color: red;
+	font-size: 200%;
+	vertical-align: middle
+}
+
+.label-inline {
+	display: block;
+	font-family: Roboto;
+	margin-bottom: 2%;
+}
+
+#intro {
+	width: 700px;
+	margin: auto;
+}
+
+label {
+	display: inline;
+	padding-right: 12px;
+}
+
+#id_comments, #id_conditions {
+	height: 50px;
+}
+
+ol.survey-questions, ul {
+	margin-left: 0px;
+	list-style: none;
+	padding: 0;
+}
+
+.q-item {
+	transition: background-color 200ms cubic-bezier(0.0,0.0,0.2,1);
+	background-color: #fff;
+	border: 1px solid #dadce0;
+	border-radius: 8px;
+	margin-bottom: 12px;
+	padding: 24px;
+	page-break-inside: avoid;
+}
+
+.category-container {
+	width: 100%;
+}
+
+.survey-title {
+	text-align: center;
+}
+
+.survey-questions .form-group label {
+	font-family: 'Google Sans',Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .1px;
+  line-height: 24px;
+  color: #202124;
+  font-weight: 400;
+  width: 100%;
+  word-break: break-word;
+}
+
+.slider.slider-horizontal {
+	width: 60% !important;
+	max-width: 60%;
+	float: left;
+}
+
+.range-from, .range-to {
+	width: 20%;
+	max-width: 20%;
+	float: left;
+}
+
+.range-from span, .range-to span {
+	font-size: 14px;
+	vertical-align: super;
+}
+
+.slider-handle {
+	background-color: #fff !important;
+	background-image: linear-gradient(to bottom, #fff, #036fa5) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #036fa5) !important;
+	background-image: -o-linear-gradient(top, #fff, #036fa5) !important;
+}
+
+.submit-button input {
+
+}
+
+.errorlist {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.image-selection {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 0%;
+	min-width: 0%;
+	vertical-align: middle;
+}
+
+.category-container ul[id*='image'] {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	box-pack: justify;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.category-container ul[id*='image'] li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	max-width: 268px;
+	width: 268px;
+	box-pack: justify;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.image-selection-image-wrapper {
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border-color: rgb(96, 125, 139);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	-webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 195px;
+  margin: 12px 0;
+  line-height: 195px;
+  outline-width: 0;
+  padding: 8px;
+  width: 260px;
+}
+
+label {
+	padding-right: 0px;
+}
+
+input[name*="plain"] {
+	display: none;
+}
+
+.plain-label {
+	font-weight: bold !important;
+}
+
+.field-answer {
+	
+}

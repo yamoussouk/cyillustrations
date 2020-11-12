@@ -1,0 +1,1 @@
+$('[class^=c-range]').slider();

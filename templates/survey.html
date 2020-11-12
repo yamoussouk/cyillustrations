@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load survey_extras %}
+
+{% block body %}
+
+<h1 class="survey-title">{{survey.name|title}}</h1>
+
+<div>
+	<form action="/survey/{{survey.id}}/" method="post">{% csrf_token %}
+
+		<ol class="survey-questions">
+			<div class="category-container">
+			{% for field in response_form %}
+					<li class="q-item" value="{% counter %}">
+						<div class="form-group">
+							{% if field.field.required %}
+								<!-- {{ field.errors }} -->
+								<label for="{{ field.field.widget.attrs.id }}">{{ field.label }}</label><span class="asterix"> * </span>
+							{% else %}
+								<!-- {{ field.errors }} -->
+								<label for="{{ field.field.widget.attrs.id }}" {% if 'plain' in field.name %}class="plain-label"{% endif %}>{{ field.label }}</label>
+							{% endif %}
+								<span class="form-help-text">{{ field.help_text}}</span>
+							{% if 'range' in field.name %}
+								<div class="range-from">
+									<span class="font-weight-bold mr-3 mt-1">{{ field.field.widget.attrs.data_from }}</span>
+								</div>
+								{{ field }}
+								<div class="range-to">
+									<span class="font-weight-bold ml-3 mt-1">{{ field.field.widget.attrs.data_to }}</span>
+								</div>
+							{% elif 'text' in field.name %}
+								{{ field }}
+							{% elif 'radio' in field.name %}
+								{{ field }}
+							{% elif 'select' in field.name %}
+								{{ field }}
+							{% elif 'multiple' in field.name %}
+								{{ field }}
+							{% elif 'integer' in field.name %}
+								{{ field }}
+							{% elif 'image' in field.name %}
+								{{ field }}
+							{% elif 'plain' in field.name %}
+								{{ field }}
+							{% endif %}
+						</div>
+					</li>
+			{% endfor %}
+			</div>
+		</ol>
+		<div class="submit-button"><button type="submit" class="btn btn-primary">I'm done</button></div>
+	</form>
+
+</div>
+
+{% endblock %}
+
+{% block extrajs %}
+	<script src="/media/js/jquery.collapsible.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//collapsible management
+			$('.collapsible').collapsible({defaultOpen: 'response_metadata'});
+		});
+	</script>
+{% endblock %}
